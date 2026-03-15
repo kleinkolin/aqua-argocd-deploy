@@ -8,11 +8,7 @@ gateway:
     registry: aquasec.azurecr.io
     repositoryUriPrefix: aquasec.azurecr.io
   service:
-    type: NodePort
-    # optional: pin the nodePorts to what you already have
-    nodePorts:
-      http: 31873
-      https: 31062
+    type: LoadBalancer 
 global:
   db:
     image:
@@ -28,6 +24,18 @@ imageCredentials:
   repositoryUriPrefix: aquasec.azurecr.io
   username: rnd-pull
 web:
+  service:
+    type: NodePort
+    ports:
+      - name: aqua-web
+        port: 8080
+        targetPort: 8080
+        nodePort: 31873
+      - name: aqua-web-ssl
+        port: 443
+        targetPort: 8443
+        nodePort: 31062
+  
   extraEnvironmentVars:
     CYBERCENTER_ADDR: https://cybercenter5.aquasec.com
   image:
