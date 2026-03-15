@@ -1,0 +1,30 @@
+admin:
+  password: '@Password1'
+  token: fu9tS2_pxL4_K7YlYbGmO0DkTrYGH7MRYdRrR7-oq_YfM60HFLME7hP8Nwue-TTushjeoETEAUL_ow4wlyjaAgBAZYJLhhuXDMtIOwIQtoBnpRpbFjTkMrdBmpMwgY5SFXVrMlfUCQLjNjsqLE2QBnL325jZj_UPW2Hmlm1UESlSzV4PA_c3UbktHbRiuvjUchHlZHRHAoZcx1xnSsp5VQmqWThGA9rjPu97iOA3iLhmBoU31_VZ59yq_h_tTeZl97GztWNWRe82Yt0nLIMuRVMc7QJ5vm6Go0dlGnZvTlwcKcupMm_49rb5JYjaJEOimR3U3FqG4Nr9of-SRg-7qr1q_8HCeD0HKwnm6nTJDENfg-hcH1wQpRAp-CbaP0HQi9iKi44zLrrJLel-xG3eXPQEI0vrER0LYMvu4j_Y8_CjR6ICp2NFgnR5KILG4R6pOA59uvBNq3zZna6mmhx-wfCfr7wwKhb12mOvIY8Y1PN4-xgeUVYTkhcLarKWhGF64c2NFhr9BLBpfz7-c3ZrzAXzqf28uo14Es8YwomzZDZ_8UrPX1LzIz01m_xNI4bu1ayn58ypUdbjwkCmSQUzTy9qtk1xmUEKhaKt_JrNTZqZ-Plb-CETSmsvL61jQg2esEnmgVdLM1qEo3wmte_4L26-4DAfDj77ghSE87hG_ll2fzwghNg6wyqhu787NZSCs_eZApeUlOiqB94MUNVj15diZAbZ7MZ52ydkep0jxvR474mBZavTSFipRrWYhI70y9T4IJzIxKnJzSromuMUj1S8r2upQ02HUFfrxs9hOYfZ5BoYeP0pSxLgci-B8JDlRhEq5V9SyeLElzbFtuFTq2uN9x0Kow3LRa0aIJJ0f_SpVzFUuAKtIxQhwIlYo813bn6DrPbulJNMYEE1mvbQd169M_dRFOrDPtXLAtiTgeXNoRdtycbKrrvlFpPRbPr7PwfxC1ICouWdBQ8g2hqNN_m9QVFVURq7_ME9bEmypqU=
+gateway:
+  image:
+    tag: 2022.4.868.15
+  imageCredentials:
+    registry: aquasec.azurecr.io
+    repositoryUriPrefix: aquasec.azurecr.io
+  service:
+    type: LoadBalancer
+global:
+  db:
+    image:
+      tag: 2022.4.868.15
+  envoy:
+    image:
+      tag: 2022.4.868.15
+  platform: kubernetes
+imageCredentials:
+  create: true
+  password: S4JIorBKmM=Y9PrDeWKBBt54QBzVV1QR
+  registry: aquasec.azurecr.io
+  repositoryUriPrefix: aquasec.azurecr.io
+  username: rnd-pull
+web:
+  extraEnvironmentVars:
+    CYBERCENTER_ADDR: https://cybercenter5.aquasec.com
+  image:
+    tag: 2022.4.868.15
