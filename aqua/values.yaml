@@ -8,7 +8,11 @@ gateway:
     registry: aquasec.azurecr.io
     repositoryUriPrefix: aquasec.azurecr.io
   service:
-    type: LoadBalancer
+    type: NodePort
+    # optional: pin the nodePorts to what you already have
+    nodePorts:
+      http: 31873
+      https: 31062
 global:
   db:
     image:
