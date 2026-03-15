@@ -35,12 +35,15 @@ web:
         port: 443
         targetPort: 8443
         nodePort: 31062
-  
+ 
   extraEnvironmentVars:
+    CYBERCENTER_ADDR: https://cybercenter5.aquasec.com
+          
+  additionalEnvVars:
     - name: AQUA_REMOTE_REGISTRY_MODE
       value: '"1"'
     - name: AQUA_FF_OVERRIDES
       value: '{"SLK-53526":true, "SLK-69145":true, "SLK-97783":true}'
-    CYBERCENTER_ADDR: https://cybercenter5.aquasec.com
+  
   image:
     tag: 2022.4.868.15
