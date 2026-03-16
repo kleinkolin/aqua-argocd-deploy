@@ -18,8 +18,8 @@ global:
       tag: 2022.4.868.151
   platform: kubernetes
 imageCredentials:
-  create: true
-  password: 
+  create: false
+  #password: 
   registry: aquadev.azurecr.io
   repositoryUriPrefix: aquadev.azurecr.io
   username: polaris-pull
