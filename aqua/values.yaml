@@ -39,7 +39,7 @@ web:
   extraEnvironmentVars:
     CYBERCENTER_ADDR: https://cybercenter5.aquasec.com
     AQUA_REMOTE_REGISTRY_MODE: "1"
-    #AQUA_FF_OVERRIDES: '{"SLK-53526":true,"SLK-69145":true,"SLK-97783":true}'      
+    AQUA_FF_OVERRIDES: '{"SLK-53526":true,"SLK-69145":true,"SLK-97783":true}'      
   
   image:
     tag: 2022.4.868.15
