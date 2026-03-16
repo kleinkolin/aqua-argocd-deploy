@@ -5,8 +5,8 @@ gateway:
   image:
     tag: 2022.4.868.151
   imageCredentials:
-    registry: aquasec.azurecr.io
-    repositoryUriPrefix: aquasec.azurecr.io
+    registry: aquadev.azurecr.io
+    repositoryUriPrefix: aquadev.azurecr.io
   service:
     type: LoadBalancer 
 global:
@@ -19,10 +19,10 @@ global:
   platform: kubernetes
 imageCredentials:
   create: true
-  password: S4JIorBKmM=Y9PrDeWKBBt54QBzVV1QR
-  registry: aquasec.azurecr.io
-  repositoryUriPrefix: aquasec.azurecr.io
-  username: rnd-pull
+  password: 
+  registry: aquadev.azurecr.io
+  repositoryUriPrefix: aquadev.azurecr.io
+  username: polaris-pull
 web:
   service:
     type: NodePort
